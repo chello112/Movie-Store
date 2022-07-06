@@ -1,9 +1,26 @@
-import React from 'react'
+import React from "react";
+import './Renting.css';
 
-function Renting() {
+import AddMovie from "../renting/AddMovie";
+import Movie from "../renting/Movie";
+import MoviesList from "../renting/MoviesList";
+
+const Renting = () => {
+  let content = <p>Found no movies.</p>;
+
   return (
-    <div className='renting'>Renting</div>
-  )
-}
+    <div className="renting">
+    <React.Fragment>
+      <section>
+        <AddMovie />
+      </section>
+      <section>
+        <button>Fetch movies</button>
+      </section>
+      <MoviesList />
+    </React.Fragment>
+    </div>
+  );
+};
 
-export default Renting
+export default Renting;
