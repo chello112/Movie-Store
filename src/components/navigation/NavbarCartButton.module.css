@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #1a83ff;
+  color: white;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.badge {
+  background-color: #f30b0b;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #f30b0b;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: black;
+}

@@ -1,0 +1,15 @@
+.card {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 70%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+}
