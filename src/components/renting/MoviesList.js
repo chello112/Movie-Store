@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 
-import MoviesSummary from "./MoviesSummary";
 import AvailableMovies from "./AvailableMovies";
 
 const MoviesList = () => {

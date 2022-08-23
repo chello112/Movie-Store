@@ -26,13 +26,13 @@ function App() {
         <CartProvider>
           {cartIsShown && <Cart onClose={hideCartHandler} />}
           <Navbar onShowCart={showCartHandler} />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/renting" element={<Renting />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </CartProvider>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/renting" element={<Renting />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
       </Router>
     </>
   );
