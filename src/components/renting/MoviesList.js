@@ -5,7 +5,6 @@ import AvailableMovies from "./AvailableMovies";
 const MoviesList = () => {
   return (
     <Fragment>
-     {/* <MoviesSummary /> */}
       <AvailableMovies />
     </Fragment>
   );
