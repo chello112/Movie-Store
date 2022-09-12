@@ -13,7 +13,7 @@ const Contacts = () => {
   const [openViljandi, setOpenViljandi] = useState(false);
 
   return (
-    <div className="position">
+    <div>
       <div className="intro">
         <h2>Feel free to check out our stores all over the country</h2>
       </div>
@@ -40,7 +40,10 @@ const Contacts = () => {
       <Parnu openParnu={openParnu} onClose={() => setOpenParnu(false)}>
         Tallinn
       </Parnu>
-      <Viljandi openViljandi={openViljandi} onClose={() => setOpenViljandi(false)}>
+      <Viljandi
+        openViljandi={openViljandi}
+        onClose={() => setOpenViljandi(false)}
+      >
         Tallinn
       </Viljandi>
     </div>

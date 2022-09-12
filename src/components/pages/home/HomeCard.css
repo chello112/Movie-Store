@@ -1,0 +1,47 @@
+.card__pic-wrap {
+  margin-left: 14%;
+  width: 72%;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+}
+
+.card__pic {
+  top: 100;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.card__pic:hover {
+  transform: scale(1.1);
+}
+
+.homeBtn {
+  background-color: rgb(216, 137, 18);
+  color: black;
+  margin: 1%;
+  margin-top: 30%;
+  border: solid 1px;
+  border-radius: 50px;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.homeBtn:hover {
+  opacity: 0.9;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

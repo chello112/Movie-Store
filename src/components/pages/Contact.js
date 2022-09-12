@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Contacts from "../../contact/Contacts";
 
 const Contact = () => {
   return (
-    <div>
+    <Fragment>
       <Contacts />
-    </div>
+    </Fragment>
   );
 };
 
