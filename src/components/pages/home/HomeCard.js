@@ -17,7 +17,7 @@ function HomeCard(props) {
             navigate("/renting");
           }}
         >
-          WIEW MOVIES
+          VIEW MOVIES
         </button>
         <button
           className="homeBtn"
