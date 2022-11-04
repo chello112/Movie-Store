@@ -12,7 +12,7 @@ const AvailableMovies = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       const response = await fetch(
-        "https://moviestore-e0767-default-rtdb.europe-west1.firebasedatabase.app/movies.json"
+        "https://movie-store-6c7ef-default-rtdb.europe-west1.firebasedatabase.app/movies.json"
       );
 
       if (!response.ok) {

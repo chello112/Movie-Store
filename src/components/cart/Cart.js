@@ -31,7 +31,7 @@ const Cart = (props) => {
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
     await fetch(
-      "https://moviestore-e0767-default-rtdb.europe-west1.firebasedatabase.app/orders.json",
+      "https://movie-store-6c7ef-default-rtdb.europe-west1.firebasedatabase.app/orders.json",
       {
         method: "POST",
         body: JSON.stringify({
