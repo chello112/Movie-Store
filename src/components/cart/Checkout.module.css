@@ -30,19 +30,19 @@
 
 .actions button {
   font: inherit;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid black;
-    padding: 0.5rem 2rem;
-    border-radius: 25px;
-    margin-left: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
 }
 
 .actions button:hover,
 .actions button:active {
   background-color: red;
-    border-color: black;
-    color: white;
+  border-color: black;
+  color: white;
 }
 
 .actions .submit {

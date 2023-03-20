@@ -8,7 +8,7 @@ function HomeCard(props) {
   return (
     <>
       <div className="card__pic-wrap" data-category={props.label}>
-        <img className="card__pic" alt="Movie image" src={props.src} />
+        <img className="card__pic" alt="movie-img" src={props.src} />
       </div>
       <div className="position">
         <button

@@ -1,5 +1,4 @@
 import { useContext } from "react";
-
 import * as AiIcons from "react-icons/ai";
 import CartContext from "../store/cart-context";
 import classes from "./NavbarCartButton.module.css";

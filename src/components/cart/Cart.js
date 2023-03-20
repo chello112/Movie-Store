@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-
+import { useContext, useState } from "react";
 import Modal from "../../UI/Modal";
 import classes from "./Cart.module.css";
 import CartContext from "../store/cart-context";
@@ -30,16 +29,13 @@ const Cart = (props) => {
 
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
-    await fetch(
-      "https://movie-store-6c7ef-default-rtdb.europe-west1.firebasedatabase.app/orders.json",
-      {
-        method: "POST",
-        body: JSON.stringify({
-          user: userData,
-          orderedItems: cartCtx.items,
-        }),
-      }
-    );
+    await fetch("https://movie-store-9add3-default-rtdb.europe-west1.firebasedatabase.app/orders.json", {
+      method: "POST",
+      body: JSON.stringify({
+        user: userData,
+        orderedItems: cartCtx.items,
+      }),
+    });
     setIsSubmitting(false);
     setDidSubmit(true);
     cartCtx.clearCart();
@@ -74,34 +70,29 @@ const Cart = (props) => {
   );
 
   const cartModalContent = (
-    <React.Fragment>
-      {" "}
+    <>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      {isCheckout && (
-        <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />
-      )}
+      {isCheckout && <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />}
       {!isCheckout && modalActions}
-    </React.Fragment>
+    </>
   );
 
   const isSubmittingModalContent = <p>Sending order data...</p>;
 
   const didSubmitModalContent = (
-    <React.Fragment>
-      {" "}
+    <>
       <h1>Successfully sent the order!</h1>
       <div className={classes.actions}>
         <button className={classes.button} onClick={props.onClose}>
           Close
         </button>
       </div>
-    </React.Fragment>
+    </>
   );
-
   return (
     <Modal onClose={props.onClose}>
       {!isSubmitting && !didSubmit && cartModalContent}

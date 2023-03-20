@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import "./Contacts.css";
 import Tallinn from "./locations/Tallinn";
 import Tartu from "./locations/Tartu";
@@ -40,10 +39,7 @@ const Contacts = () => {
       <Parnu openParnu={openParnu} onClose={() => setOpenParnu(false)}>
         Tallinn
       </Parnu>
-      <Viljandi
-        openViljandi={openViljandi}
-        onClose={() => setOpenViljandi(false)}
-      >
+      <Viljandi openViljandi={openViljandi} onClose={() => setOpenViljandi(false)}>
         Tallinn
       </Viljandi>
     </div>

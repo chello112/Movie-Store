@@ -1,4 +1,3 @@
-import React from "react";
 import HomeCard from "./home/HomeCard";
 import homeCardImage from "../../assets/movie.jpg";
 

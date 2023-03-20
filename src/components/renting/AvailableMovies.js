@@ -12,7 +12,7 @@ const AvailableMovies = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       const response = await fetch(
-        "https://movie-store-6c7ef-default-rtdb.europe-west1.firebasedatabase.app/movies.json"
+        "https://movie-store-9add3-default-rtdb.europe-west1.firebasedatabase.app/movies.json"
       );
 
       if (!response.ok) {
@@ -23,6 +23,7 @@ const AvailableMovies = () => {
 
       const loadedMovies = [];
 
+      //Looping through data add adding movies to loadedMovies array
       for (const key in responseData) {
         loadedMovies.push({
           id: key,
@@ -55,13 +56,7 @@ const AvailableMovies = () => {
   }
 
   const moviesList = movies.map((movie) => (
-    <MovieItem
-      key={movie.id}
-      id={movie.id}
-      name={movie.name}
-      description={movie.description}
-      price={movie.price}
-    />
+    <MovieItem key={movie.id} id={movie.id} name={movie.name} description={movie.description} price={movie.price} />
   ));
 
   return (
